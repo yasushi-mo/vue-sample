@@ -1,0 +1,14 @@
+<body>
+  <h1>私の素敵なWebサイト</h1>
+  <div id="app">
+    <button @click="count++">カウント: {{ count }}</button>
+  </div>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script>
+    Vue.createApp({
+      data() {
+        return { count: 0 }
+      },
+    }).mount('#app')
+  </script>
+</body>
